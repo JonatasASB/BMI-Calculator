@@ -25,7 +25,7 @@ document.querySelector('#peso').addEventListener('input', function () {
 
     // Se o usuário digitar ao menos um número, adiciona automaticamente a vírgula antes dos dois últimos dígitos
     if (value.length > 1) {
-        value = value.replace(/(\d+)(\d{2})$/, '$1.$2');
+        value = value.replace(/(\d+)(\d{3})$/, '$1.$2');
     }
 
     // Atualiza o campo com o valor formatado
